@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // nome (texto), comprimento (int), cor (texto),
+        // ambiente (texto) e velocidade (float)
+        class Animal{
+            constructor(nome, comprimento, patas, cor, ambiente, velocidade){
+                this.nome = nome
+                , this.comprimento = comprimento
+                , this.patas = patas
+                , this.cor = cor
+                , this.ambiente = ambiente
+                , this.velocidade = velocidade
+            }   
+
+            AlterarNome(nome){
+                this.nome = nome
+            }
+            RetornarNome(){
+                return this.nome
+            }
+        }
+    </script>
+    
+</body>
+</html>
