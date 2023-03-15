@@ -1,0 +1,31 @@
+-- APAGANDO O BANCO DE DADOS CASO EXISTA
+DROP DATABASE IF EXISTS dbexercicio19;
+
+-- CRIANDO A BASE DE DADOS
+ CREATE DATABASE dbexercicio19;
+ 
+ -- CONECTANDO A BASE DE DADOS
+ USE dbexercicio19;
+ 
+ -- CRIANDO AS TABELAS
+ CREATE TABLE CLIENTE(
+	idCLIENTE INT NOT NULL
+    , NOME varchar(100) NOT NULL
+    , CPF int(10)
+    , CNH int(20)
+    , EMAIL varchar(100)
+    , TEL_RESIDENCIL INT(11)
+    , TEL_REFERENCIAL INT(11)
+    , TEL_CELULAR INT(11)
+    , primary key (idCLIENTE)
+ );
+ 
+     CREATE TABLE FUNCIONARIO(
+	idFUNCIONARIO INT NOT NULL
+    , NOME varchar(100)
+    , DTADMISSAO datetime
+    , TELEFONE int
+    , idDEPARTAMENTO int
+    , primary key (idFUNCIONARIO)
+    , foreign key (idDEPARTAMENTO) references DEPARTAMENTO (idDEPARTAMENTO)
+ );

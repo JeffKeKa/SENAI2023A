@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIOS 0309</title>
+</head>
+<body>
+    <!-- 1. Crie um objeto Ninja, por constructor function, com a propriedade de nome do ninja e o método atirarShuriken; -->
+
+    <!-- 2. No objeto ninja que a propriedade shuriken, com uma quantidade de estrelas ninjas. A cada método do disparo subtraia uma. O ninja não pode jogar mais shurikens caso elas tenham acabado. -->
+
+    <Script>
+        class Personagem{
+            constructor(tipo, arma, municao, ataque){
+                this.tipo = tipo,
+                this.arma = arma
+                this.municao = municao
+                this.ataque = ataque
+            }
+
+            atirarShuriken(){
+
+                if (municao > 0) {
+                    municao =-1
+                    console.log('zuum')
+
+                }else{
+                    console.log('sem munição')
+
+                }
+                
+            }
+        }
+
+        let Ninja = new Personagem('Ninja', 'Shuriken', 20, 'Atirar Shuriken')
+
+        console.table(Ninja)
+        Ninja.atirarShuriken()
+        Ninja.atirarShuriken()
+
+
+    </Script>
+</body>
+</html>
